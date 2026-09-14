@@ -6,25 +6,27 @@ Projeto de análise financeira e fundamentalista que integra automação em Pyth
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **Python 3.x**: Coleta automática de preços de fechamento e histórico via `yfinance`.
-* **SQLite / pandas**: Armazenamento e estruturação do banco de dados relacional.
-* **Power BI Desktop**: Modelagem de dados, medidas DAX e dashboards interativos.
-* **DAX Studio**: Otimização e validação de consultas DAX.
+* **Python 3.x:** Coleta automática de preços de fechamento e histórico via `yfinance`.
+* **SQLite / pandas:** Armazenamento e estruturação do banco de dados relacional.
+* **Power BI Desktop:** Modelagem de dados, medidas DAX e dashboards interativos.
+* **Artigo Acadêmico:** Documentação completa no padrão ABNT / UniSales.
 
 ---
 
-## 📂 Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
-* `coleta_precos_yfinance.py`: Script de extração das cotações em tempo real via Yahoo Finance.
-* `init_db.py`: Script para povoamento e sincronização do banco de dados SQLite (`dashboard_ibovespa.db`).
-* `empresas.csv`: Mapeamento das empresas selecionadas, setores e tipos de ações.
-* `indicadores_anuais.csv`: Indicadores fundamentalistas consolidados (P/L, P/VP, ROE, ROA, Dividend Yield, etc.).
-* `cotacoes_diarias.csv`: Série histórica de preços de abertura, fechamento, máximas e mínimas.
+* `data/`: Banco de dados SQLite (`dashboard_ibovespa.db`) e tabelas CSV (`cotacoes_diarias`, `empresas`, `indicadores_anuais`).
+* `scripts/`: Codificação Python para extração e carga de dados (`coleta_precos_yfinance.py`, `init_db.py`).
+* `docs/`: Artigo técnico ABNT em Word/PDF e roteiros de apresentação.
+* `AP1_dashboard_analistico.pbix`: Arquivo completo do Power BI com o dashboard de 4 páginas.
 
 ---
 
-## ⚡ Como Executar o Projeto
+## 👥 Integrantes (Squad 6)
 
-1. **Instalar dependências**:
-   ```bash
-   pip install -r requirements.txt
+* Arthur Cândido Pimentel
+* Bruno Araújo Silva
+* Luis Felipe Siliprande Coelho
+* Polyana Raquel Dias de Souza Rodrigues
+
+**Orientador:** Prof. James Junior
